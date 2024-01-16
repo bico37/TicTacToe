@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower TicTacToe</title>
+    <link rel="stylesheet" href="./TicTacToe.css">
+    <script src="./TicTacToe.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <div class="background">
+            <div class="background-image">
+            </div>
+        </div>
+        <div class="headline">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div id="players">
+            
+        </div>
+
+        <div class="playPlayer">
+            <div class="gridPlayer">               
+                <div id="player1">
+                    <div id="player1Name">
+                        <div id="player1NameInput">
+                            <h4>Player1 Name:</h4>
+                            <input type="text" id="nameOfPlayer1" value="">
+                        </div>
+                    </div>
+                    <div id="player1Flower">
+                        <h4>Choose Your Flower</h4>                        
+                            <div id="P1flower1" onclick="flower1Rose()">
+                                <img src="./img/rose.png" alt="">
+                            </div>
+                            <div id="P1flower2" onclick="flower1Sun()">
+                                <img src="./img/sonnenblume.png" alt="">
+                            </div>
+                            <div id="P1flower3" onclick="flower1Tulp()">
+                                <img src="./img/tulpe.png" alt="">
+                            </div>
+                    </div>
+                </div>
+        
+                <div class="game">
+                    <div id="box1" onclick="boxclicked(this,0,0)"><img src="./img/GameBackG.png" alt=""></div>
+                    <div id="box2" onclick="boxclicked(this,0,1)"><img src="./img/GameBackG.png" alt=""></div>
+                    <div id="box3" onclick="boxclicked(this,0,2)"><img src="./img/GameBackG.png" alt=""></div>
+                    <div id="box4" onclick="boxclicked(this,1,0)"><img src="./img/GameBackG.png" alt=""></div>
+                    <div id="box5" onclick="boxclicked(this,1,1)"><img src="./img/GameBackG.png" alt=""></div>
+                    <div id="box6" onclick="boxclicked(this,1,2)"><img src="./img/GameBackG.png" alt=""></div>
+                    <div id="box7" onclick="boxclicked(this,2,0)"><img src="./img/GameBackG.png" alt=""></div>
+                    <div id="box8" onclick="boxclicked(this,2,1)"><img src="./img/GameBackG.png" alt=""></div>
+                    <div id="box9" onclick="boxclicked(this,2,2)"><img src="./img/GameBackG.png" alt=""></div>
+                </div>
+        
+                <div id="player2">
+                    <div id="player2Name">
+                        <div id="player2NameInput">
+                            <h4>Player2 Name</h4>
+                            <input type="text" id="nameOfPlayer2" value="">
+                        </div>
+                    </div>
+                    <div id="player2Flower">
+                            <h4>Choose Your Flower</h4>
+                            <div id="P2flower1" onclick="flower2Rose()">
+                                <img src="./img/rose.png" alt="">
+                            </div>
+                            <div id="P2flower2" onclick="flower2Sun()">
+                                <img src="./img/sonnenblume.png" alt="">
+                            </div>
+                            <div id="P2flower3" onclick="flower2Tulp()">
+                                <img src="./img/tulpe.png" alt="">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <div id="winnerFound" style="display: none;">
+            <div class="boxWF">
+                <div id="playerw"></div>
+                <div id="score"></div>
+                <div id="designW">
+                    
+                    <div id="playAgain" onclick="playAgain()">
+                        <h3>Play Again</h3>
+                    </div>
+                    <div id="endGame" onclick="endGame()">
+                        <h3>End game</h3>
+                    </div>
+                
+                    <div id="goBackToStart" onclick="goBackToStart()" style="display: none;">
+                        <h3>Go back to Start</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
